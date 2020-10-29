@@ -17,7 +17,7 @@ python3 app.py
 ```
 By changing the variables in "Suite variables" and adding "ver.txt" this can also be used in conjunction with Rylan Software Suite:
 
->[https://github.com/RylanTaylor/Rylan-Software-Suite](https://github.com/RylanTaylor/Rylan-Software-Suite)
+>[https://github.com/RylanTaylor/Software-Suite-Updater](https://github.com/RylanTaylor/Software-Suite-Updater)
 
 ## Usage
 Upon running the application, put the computer name in the "Computer Host Name" field to point the installation server to that machine. The "Owner's Username" field is included in the client but is not used by default in the Application Deployment server. Set this field to Null by default if this is not necessary and remove the entry from "./web/template/template_index.html".
