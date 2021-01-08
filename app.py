@@ -11,6 +11,7 @@ import math
 
 server = "INSERT_DEFAULT_SERVER_HERE"
 port = "8080"
+clientver = "1.1.0" #Required as the server will block out of date clients
 
 app_port = 17755
 minToTimeout = 10 #Number of minutes to check status before timing out
@@ -55,7 +56,6 @@ def indexSetup(): #Setup default index file by reading the template file and mak
 		index = f.read()
 
 	#Replaces text in index with the current client version and max install time
-	clientver = open("ver.txt", "r", encoding="utf-8").read()
 	index = index.replace("REPLACE_WITH_VERSION_NUM", "Version " + clientver)
 	index = index.replace("MAX_TIME_TO_INSTALL", str(math.ceil(minToTimeout)))
 
